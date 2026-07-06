@@ -20,12 +20,12 @@ module "ecs" {
 module "rds" {
   source = "../../modules/rds"
 
-  environment            = var.environment
-  vpc_id                 = module.network.vpc_id
-  private_subnet_ids     = module.network.private_subnet_ids
-  ecs_security_group_id  = module.ecs.ecs_security_group_id
+  environment           = var.environment
+  vpc_id                = module.network.vpc_id
+  private_subnet_ids    = module.network.private_subnet_ids
+  ecs_security_group_id = module.ecs.ecs_security_group_id
 
-  db_instance_class      = var.db_instance_class
+  db_instance_class       = var.db_instance_class
   backup_retention_period = var.backup_retention_period
   deletion_protection     = var.deletion_protection
 
