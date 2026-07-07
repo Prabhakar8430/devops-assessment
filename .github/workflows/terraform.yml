@@ -35,7 +35,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -no-color -out=tfplan
+        run: terraform plan -refresh=false -no-color -out=tfplan
 
       - name: Upload Terraform Plan
         uses: actions/upload-artifact@v4
