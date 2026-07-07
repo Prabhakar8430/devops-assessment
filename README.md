@@ -11,7 +11,7 @@
 ## Project Structure
 
 - Infrastructure using Terraform
-- Local PostgreSQL Database
+- Local PostgreSQL Database(DB)
 - SQL Migrations
 - Seed Data
 - Backup & Restore Scripts

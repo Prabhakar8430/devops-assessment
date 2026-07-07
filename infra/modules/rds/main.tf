@@ -1,6 +1,6 @@
 resource "aws_security_group" "rds_sg" {
 
-  name   = "${var.environment}-rds-sg"
+  name = "${var.environment}-rds-sg"
 
   vpc_id = var.vpc_id
 
@@ -80,7 +80,7 @@ resource "aws_db_instance" "postgres" {
 
   vpc_security_group_ids = [
 
-      aws_security_group.rds_sg.id
+    aws_security_group.rds_sg.id
 
   ]
 
